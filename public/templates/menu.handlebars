@@ -1,0 +1,73 @@
+<div class="container" id="wrapper-background">
+    <div class="page-title">
+        <h1 class="header-title">DINNER MENU</h1>
+        <p class="header-body">Fusce nunc diam suscipit a iaculis ac tristique ac erat</p>
+    </div>
+</div>
+<div class="contentMain-content-area menus">
+
+    <div id="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb pull-left">
+                <li><a href="/#">HOME</a></li>
+                <li>SOME CATEGORY</li>
+                <li class="active"><a href="/#/menu">MENU</a></li>
+            </ol>
+            <div class="search pull-right">
+                <form method="get" id="searchform" action="">
+                    <input type="text" id="search-input" class="" name="searchInput" placeholder="Search this website...">
+                    <button type="submit" id="search-button" class="btn browse-content-btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="content-area-container container menu">
+        <div class="content-items">
+            <div class="col-xs-12 col-sm-4 left">
+                <h3 class="main-title">FRESH SEAFOOD</h3>
+                {{#each this}}
+                        <div id="menu-page-content" class="menu-item row">
+                            <div class="thumb col-xs-12 col-sm-4">
+                                <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
+                                <span class="menu-item-price"><span>${{price}}</span></span>
+                            </div>
+                            <div class="menu-item-body col-sm-8">
+                                <h3>{{name}}</h3>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>
+                {{/each}}
+            </div>
+            <div class="col-xs-12 col-sm-4 right">
+                <h3 class="main-title">FRESH SEAFOOD</h3>
+                {{#each this}}
+                        <div id="menu-page-content" class="menu-item row">
+                            <div class="thumb col-xs-12 col-sm-4">
+                                <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
+                                <span class="menu-item-price"><span>${{price}}</span></span>
+                            </div>
+                            <div class="menu-item-body col-sm-8">
+                                <h3>{{name}}</h3>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>>
+                {{/each}}
+            </div>
+            <div class="col-xs-12 col-sm-4 mid">
+                <h3 class="main-title">FRESH SEAFOOD</h3>
+                {{#each this}}
+                        <div id="menu-page-content" class="menu-item row">
+                            <div class="thumb col-xs-12 col-sm-4">
+                                <img src="{{image}}" class="img-thumbnail" alt="{{title}}">
+                                <span class="menu-item-price"><span>${{price}}</span></span>
+                            </div>
+                            <div class="menu-item-body col-sm-8">
+                                <h3>{{name}}</h3>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

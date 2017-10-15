@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.20.19/system.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase-storage.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/navigo@5.3.2/lib/navigo.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+            crossorigin="anonymous">
+
+    <script src="configs/firebase.conf.js"></script>
+    <script src="configs/system.conf.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/location.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <title>myCuisine</title>
+</head>
+
+<body>
+<div class="loader"></div>
+<div id="wrapper">
+    <header id="header">
+        <nav class="container nav">
+            <div class = "header-menu">
+                <div class="navbar-header">
+                    <a id="logo" class="navbar-brand" href="#">
+                        <img src="images/logo.png" class="center-block" alt="myCuisine">
+                    </a>
+                </div>
+                <div id="navbar-collapse">
+                    <ul class="navbar nav navbar-nav">
+                        <li class="active"><a href="#">HOME</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#/menu">MENU</a></li>
+                        <li><a href="#/location">LOCATION</a></li>
+                        <li><a href="#">HOURS</a></li>
+                        <li><a href="#">AWARDS</a></li>
+                        <li><a href="#/articles">REVIEWS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="main-content"></div>
+
+    <footer id="footer" class="nav navbar-default text-center">
+        <nav class="container">
+
+            <div class="common-footer">
+                <div class="row recent-data">
+                    <div class="col-xs-12 col-sm-4">
+                        <h3><img src="images/footer-logo.png" alt="myCuisine"></h3>
+                        <i>&copy; MyCuisine Theme, 2010</i>
+                        <div>
+                            Lorem ipsum dolor sit amet, vix ei dolor ponderum vivendum, pro id iudicabit contentiones. At eos iusto tempor utamur. Vel ei ludus nonumes, eam nulla pertinacia reformidans eu. Eam delenit hendrerit ea. An nibh habemus has, qui id mollis impetus convenire, in sed veniam mandamus.
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <h3 class="title">RECENT COMMENTS</h3>
+                        <div>
+                            <ul>
+                                <li><a href="#/">Rhoncus quis varius sed velit nibh moles</a></li>
+                                <li><a href="#/">Mauris quis nunc eu nunc molestie</a></li>
+                                <li><a href="#/">Egestas et sit amet odio morbi quis nunc</a></li>
+                                <li><a href="#/">Lacinia velit in nibh sodales sed quis nunc</a></li>
+                                <li><a href="#/">Pharetra sem feugiat nibh sodales sed</a></li>
+                                <li><a href="#/">Vivamus ut cursus augue nibh sodales sed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <h3 class="title">RECENT POSTS</h3>
+                        <div>
+                            <ul>
+                                <li><a href="#/">Rhoncus quis varius sed velit nibh moles</a></li>
+                                <li><a href="#/">Mauris quis nunc eu nunc molestie</a></li>
+                                <li><a href="#/">Egestas et sit amet odio morbi quis nunc</a></li>
+                                <li><a href="#/">Lacinia velit in nibh sodales sed quis nunc</a></li>
+                                <li><a href="#/">Pharetra sem feugiat nibh sodales sed</a></li>
+                                <li><a href="#/">Vivamus ut cursus augue nibh sodales sed</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/footer-symbol.png" class="center-block" alt="footer"/>
+            <br>
+            <div>
+                <ul class="navbar lower-footer">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href="#/menu">MENU</a></li>
+                    <li><a href="#/location">LOCATION</a></li>
+                    <li><a href="">HOURS</a></li>
+                    <li><a href="">AWARDS</a></li>
+                    <li><a href="#/post">REVIEWS</a></li>
+                </ul>
+                <div id="copyright">Designed by <a href="http://www.elegantthemes.com/preview/MyCuisine/" target="_blank" >ElegantThemes</a> - Powered by <a href="https://wordpress.org/" target="_blank" >WordPress</a></div>
+            </div>
+        </nav>
+    </footer>
+</div>
+<script>
+    System.import("index");
+    firebase.initializeApp(config);
+</script>
+</body>
+</html>

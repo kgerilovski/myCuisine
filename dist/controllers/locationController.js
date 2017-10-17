@@ -1,0 +1,1 @@
+async function all(){$(".common-footer").css("display","initial"),templates.getPage("location")}import{templates}from"templates";import"bootstrap";let locationController={all:all};export{locationController};

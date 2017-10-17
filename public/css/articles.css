@@ -17,6 +17,7 @@
     color: #442917;
     font-style: normal;
     font-weight: bold;
+    padding-left: 15px;
 }
 
 #blog-page-content .post-comments .thumb {
@@ -77,4 +78,37 @@
     background-image: url('../images/small-button.png');
     width: 85px;
     height: 35px;
+}
+
+.pic {
+    width: 56px;
+    height: 56px;
+    float: left;
+    font-size: 10px;
+}
+
+.recent-posts {
+    float: right;
+    text-align: center;
+}
+
+.recent-posts .title {
+    color: #cac6a1;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.recent-posts li {
+    list-style-type: none;
+}
+
+.recent-posts ul a {
+    color: #442917;
+}
+
+#panel {
+    width: 270px;
+    padding-right: 35px;
+    line-height: 200%;
+    font-size: 12px;
 }

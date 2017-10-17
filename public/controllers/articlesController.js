@@ -7,9 +7,8 @@ function all(){
 
 }
 
-
-let articlesControl = {
+let articlesController = {
     all
-}
+};
 
-export { articlesControl as articlesController }
+export { articlesController as articlesController }

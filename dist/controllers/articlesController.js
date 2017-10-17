@@ -1,0 +1,1 @@
+function all(){templates.getPage("articles")}import{templates}from"templates";import"bootstrap";let articlesController={all:all};export{articlesController};

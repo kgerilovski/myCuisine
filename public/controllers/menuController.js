@@ -3,12 +3,11 @@ import 'bootstrap';
 
 function all(){
     return new Promise((resolve, reject) => {
-        let reviews = firebase.database().ref('menu/');
+        let reviews = firebase.database().ref('/menu/');
         reviews.once('value', (snapshot) => {
         let arr = [];
         snapshot.forEach(element => {
             let cat = element.key;
-            console.log(cat);
             element.forEach(el=>{
                 let dbElements = {
                     'name': el.key,

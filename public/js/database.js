@@ -6,7 +6,7 @@ class DataBase {
     constructor(config) {
         this.database = config.database;
     }
-    
+
     getAllMenus() {
         return new Promise((resolve, reject) => {
             let reviews = this.database.ref('menu/');

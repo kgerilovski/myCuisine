@@ -218,6 +218,7 @@ ul.dropdown-menu {
 }
 
 .content-area-container p{
+    color: rgb(144, 143, 125);
     font-style: italic;
 }
 
@@ -403,7 +404,7 @@ ul.dropdown-menu {
     color: #442917;
     text-transform: capitalize;
     margin-top: 26px;
-
+    font-weight: bold;
 }
 
 .menus .menu-item-body h3  {
@@ -411,7 +412,7 @@ ul.dropdown-menu {
     color: #442917;
     text-transform: capitalize;
     margin-top: 6px !important;
-
+    font-weight: bold;
 }
 
 .thumb {

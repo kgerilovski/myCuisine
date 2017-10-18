@@ -3,7 +3,7 @@ import 'bootstrap';
 
 
 function all(){
-    templates.getPage('articles')
+    templates.getPage('articles');
 
 }
 

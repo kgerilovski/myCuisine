@@ -1,0 +1,22 @@
+{
+    "objects": [
+    {
+        "name": "Food Title Goes here", 
+        "description": "Description of the food goes right over here yes it does", 
+        "image": "../images/food.png", 
+        "price": "24"
+    },
+    {
+        "name": "Food Title Goes here", 
+        "description": "Description of the food goes right over here yes it does", 
+        "image": "../images/food.png",
+        "price": "18"
+    },
+    {
+        "name": "Food Title Goes here", 
+        "description": "Description of the food goes right over here yes it does", 
+        "image": "../images/food.png",
+        "price": "22"
+    }
+    ]
+}

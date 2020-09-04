@@ -22,7 +22,7 @@
         "gulp-imagemin": "^3.4.0",
         "gulp-load-plugins": "^1.5.0",
         "gulp-shell": "^0.6.3",
-        "handlebars": "^4.0.10",
+        "handlebars": "^4.4.5",
         "http-server": "^0.10.0",
         "jquery": "^3.2.1",
         "jquery-ui-dist": "^1.12.1",
